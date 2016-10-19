@@ -1,0 +1,27 @@
+<ion-view cache-view="false" view-title="Camera Plus">
+  <ion-content class="fullHeight">
+
+    <div class="centerDiv padding">
+      <button class="button halfWidth margin-2 icon-left ion-camera button-positive" ng-click="takePhoto('Camera')">Take Photo</button>
+      <button class="button halfWidth margin-2 icon-left ion-image button-calm" ng-click="takePhoto('Library')">From Library</button>
+    </div>
+
+  <!-- ZOOM 0.1 IS USED HERE TO DISPLAY THE ENTIRE CAMERA IMAGE WITHOUT RESCALING THE ORIGINAL IMG -->
+  <!-- IF YOU WANT TO RUN ANY FILTERS WITH JAVASCRIPT YOU WILL HAVE TO CROP THE IMAGE TO SOMETHING
+  SMALLER BECAUSE PERFORMANCE ISSUES WITH LARGE IMAGE FILES WHEN USING JAVASCRIPT -->
+    <div id="canvasContainer" class="centerDiv containerDiv">
+        <canvas id="myCanvas" style="zoom: 0.1;"></canvas>
+    </div>
+    
+  <div class="centerDiv padding">
+   <button class="button margin-2 icon-left ion-ios-arrow-thin-left" ng-click="rotateImage(-90)">Rotate L</button>
+   <button class="button margin-2 icon-right ion-ios-arrow-thin-right" ng-click="rotateImage(90)">Rotate R</button>
+  </div>
+
+   <div class="centerDiv">
+      <button class="button fullWidth icon-left ion-share button-positive" ng-click="sharePhoto()">Share Photo</button>
+    </div>
+
+  </ion-content>
+
+</ion-view>

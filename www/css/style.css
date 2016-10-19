@@ -1,0 +1,32 @@
+/* Empty. Add your own CSS if you like */
+
+.centerDiv{
+  display: inline-block; width:100%; margin: 0 auto; padding: 0px; text-align: center;
+}
+
+.margin-5{
+  margin: 2px;
+}
+.padding{
+  padding: 5px;
+}
+
+.fullHeight{
+  height: 100% !important;
+}
+
+.fullWidth{
+  width: 95% ;
+}
+
+.halfWidth{
+  width: 49% ;
+}
+
+.darkBackground{
+  background-color: #000;
+}
+
+.containerDiv{
+  height: 275px !important; width:100%;  overflow: auto;
+}
